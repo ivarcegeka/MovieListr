@@ -1,14 +1,14 @@
 import {NgModule} from "@angular/core";
 import {CommonModule} from "@angular/common";
-import {PageNotFoundComponent} from "./pagenotfound/pagenotfound.component";
-import {ActionBar} from "./actionbar/actionbar.component";
-import {MovieListr} from "./movielistr/movielistr.component";
 import {RouterModule} from "@angular/router";
+import {ActionBarComponent} from "./actionbar/action-bar.component";
+import {MovieListrComponent} from "./movielistr/movielistr.component";
+import {PageNotFoundComponent} from "./pagenotfound/pagenotfound.component";
 
 @NgModule({
     imports: [CommonModule, RouterModule],
-    declarations: [ActionBar, MovieListr, PageNotFoundComponent],
-    exports: [MovieListr, PageNotFoundComponent]
+    declarations: [ActionBarComponent, MovieListrComponent, PageNotFoundComponent],
+    exports: [MovieListrComponent, PageNotFoundComponent]
 })
 export class MainModule {
 }

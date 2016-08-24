@@ -1,15 +1,15 @@
 import {Routes, RouterModule} from "@angular/router";
-import {MovieList} from "./viewing-module/movielist/movielist.component";
+import {MovieListComponent} from "./display-module/movie-list/movie-list.component";
+import {MovieDetailsComponent} from "./display-module/movie-details/movie-details.component";
+import {EditFormComponent} from "./editing-module/editform/edit-form.component";
 import {PageNotFoundComponent} from "./main-module/pagenotfound/pagenotfound.component";
-import {EditForm} from "./editing-module/editform/editform.component";
-import {MovieDetails} from "./viewing-module/moviedetails/moviedetails.component";
 
 const appRoutes: Routes = [
-    {path: '', component: MovieList},
-    {path: 'movies', component: MovieList},
-    {path: 'details/:id', component: MovieDetails},
-    {path: 'add', component: EditForm},
-    {path: 'edit/:id', component: EditForm},
+    {path: '', component: MovieListComponent},
+    {path: 'movies', component: MovieListComponent},
+    {path: 'details/:id', component: MovieDetailsComponent},
+    {path: 'add', component: EditFormComponent},
+    {path: 'edit/:id', component: EditFormComponent},
     {path: '**', component: PageNotFoundComponent}
 ];
 

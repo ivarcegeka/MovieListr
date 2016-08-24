@@ -1,15 +1,16 @@
 import {NgModule} from "@angular/core";
 import {BrowserModule} from "@angular/platform-browser";
-import {MovieListr} from "./main-module/movielistr/movielistr.component";
-import {ViewingModule} from "./viewing-module/viewing.module";
+import {MovieListrComponent} from "./main-module/movielistr/movielistr.component";
+import {ViewingModule} from "./display-module/viewing.module";
 import {routing, appRoutingProviders} from "./app.routing";
 import {MainModule} from "./main-module/main.module";
 import {EditingModule} from "./editing-module/editing.module";
+import {DisplayModule} from "./display-module/display.module";
 
 @NgModule({
-    imports: [MainModule, BrowserModule, ViewingModule, EditingModule, routing],
+    imports: [MainModule, BrowserModule, DisplayModule, EditingModule, routing],
     providers: [appRoutingProviders],
-    bootstrap: [MovieListr]
+    bootstrap: [MovieListrComponent]
 })
 export class AppModule {
 }

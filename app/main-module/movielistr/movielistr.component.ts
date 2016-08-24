@@ -3,12 +3,12 @@ import {ROUTER_DIRECTIVES} from "@angular/router";
 
 @Component({
     moduleId: module.id,
-    selector: 'movielistr',
+    selector: 'main-movielistr',
     templateUrl: 'movielistr-component.html',
     directives: [ROUTER_DIRECTIVES],
     styleUrls: ['movielistr.css']
 })
-export class MovieListr {
+export class MovieListrComponent {
 
     constructor() {
         console.log('in constructor');

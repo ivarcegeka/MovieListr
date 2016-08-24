@@ -10,18 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
-var pagenotfound_component_1 = require("./pagenotfound/pagenotfound.component");
-var actionbar_component_1 = require("./actionbar/actionbar.component");
-var movielistr_component_1 = require("./movielistr/movielistr.component");
 var router_1 = require("@angular/router");
+var action_bar_component_1 = require("./actionbar/action-bar.component");
+var movielistr_component_1 = require("./movielistr/movielistr.component");
+var pagenotfound_component_1 = require("./pagenotfound/pagenotfound.component");
 var MainModule = (function () {
     function MainModule() {
     }
     MainModule = __decorate([
         core_1.NgModule({
             imports: [common_1.CommonModule, router_1.RouterModule],
-            declarations: [actionbar_component_1.ActionBar, movielistr_component_1.MovieListr, pagenotfound_component_1.PageNotFoundComponent],
-            exports: [movielistr_component_1.MovieListr, pagenotfound_component_1.PageNotFoundComponent]
+            declarations: [action_bar_component_1.ActionBarComponent, movielistr_component_1.MovieListrComponent, pagenotfound_component_1.PageNotFoundComponent],
+            exports: [movielistr_component_1.MovieListrComponent, pagenotfound_component_1.PageNotFoundComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], MainModule);

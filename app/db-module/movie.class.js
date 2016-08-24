@@ -1,11 +1,12 @@
 "use strict";
 var Movie = (function () {
-    function Movie(name, duration, rating, director) {
+    function Movie(name, duration, rating, director, id, rev) {
         this.name = name;
         this.duration = duration;
         this.rating = rating;
         this.director = director;
-        this.type = 'movie';
+        this.id = id;
+        this.rev = rev;
     }
     return Movie;
 }());

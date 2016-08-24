@@ -10,18 +10,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require("@angular/core");
 var common_1 = require("@angular/common");
-var editform_component_1 = require("./editform/editform.component");
 var forms_1 = require("@angular/forms");
-var db_module_1 = require("../db-module/db.module");
 var router_1 = require("@angular/router");
+var db_module_1 = require("../db-module/db.module");
+var edit_form_component_1 = require("./editform/edit-form.component");
 var EditingModule = (function () {
     function EditingModule() {
     }
     EditingModule = __decorate([
         core_1.NgModule({
-            imports: [common_1.CommonModule, forms_1.FormsModule, db_module_1.DbModule, router_1.RouterModule],
-            declarations: [editform_component_1.EditForm],
-            exports: [editform_component_1.EditForm]
+            imports: [common_1.CommonModule, forms_1.FormsModule, router_1.RouterModule, db_module_1.DbModule],
+            declarations: [edit_form_component_1.EditFormComponent],
+            exports: [edit_form_component_1.EditFormComponent]
         }), 
         __metadata('design:paramtypes', [])
     ], EditingModule);

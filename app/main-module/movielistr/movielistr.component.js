@@ -10,21 +10,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require("@angular/router");
-var MovieListr = (function () {
-    function MovieListr() {
+var MovieListrComponent = (function () {
+    function MovieListrComponent() {
         console.log('in constructor');
     }
-    MovieListr = __decorate([
+    MovieListrComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'movielistr',
+            selector: 'main-movielistr',
             templateUrl: 'movielistr-component.html',
             directives: [router_1.ROUTER_DIRECTIVES],
             styleUrls: ['movielistr.css']
         }), 
         __metadata('design:paramtypes', [])
-    ], MovieListr);
-    return MovieListr;
+    ], MovieListrComponent);
+    return MovieListrComponent;
 }());
-exports.MovieListr = MovieListr;
+exports.MovieListrComponent = MovieListrComponent;
 //# sourceMappingURL=movielistr.component.js.map
