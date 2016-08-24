@@ -5,3 +5,7 @@ typings/
 npm-debug.log
 jspm_packages/
 *.iml
+.idea/vcs.xml
+jspm.config.js
+app/**/*.js
+app/**/*.map
